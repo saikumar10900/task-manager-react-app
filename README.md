@@ -1,4 +1,12 @@
-In this project, let's build a **Comments App** by applying the concepts we have learned till now.
+In this project, I built a task manager that provides you note down your daily tasks, works.
+You can keep track of your daily activities.
+
+Provided functionalities
+ - Task creation
+ - Task search
+ - Marking task as completed
+ - Task deletion
+ - Saving tasks
 
 ### Refer to the image below:
 
