@@ -1,4 +1,4 @@
-In this project, I built a task manager that provides you note down your daily tasks, works.
+In this project, I built a task manager that provides you note down your daily tasks, plans to work accordingly.
 You can keep track of your daily activities.
 
 Provided functionalities
@@ -6,7 +6,7 @@ Provided functionalities
  - Task search
  - Marking task as completed
  - Task deletion
- - Saving tasks
+ - Auto-saving using localStorage
 
 ### Refer to the image below:
 
