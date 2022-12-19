@@ -113,7 +113,7 @@ class Todo extends Component {
   }
 
   render() {
-    const {todoList, taskName, searchInput} = this.state
+    const {todoList, taskName, searchInput, tasksCount} = this.state
     const isEmpty = todoList.length === 0
     const searchResults = todoList.filter(eachTodo =>
       eachTodo.taskName.toLowerCase().includes(searchInput.toLowerCase()),
