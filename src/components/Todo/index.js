@@ -147,6 +147,7 @@ class Todo extends Component {
                     <h1 className="todo-items-heading">
                       My{' '}
                       <span className="todo-items-heading-subpart">Tasks</span>
+                      <span className="tasks-count">{tasksCount}</span>
                     </h1>
                     <input
                       type="search"
