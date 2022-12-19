@@ -68,6 +68,7 @@ class Todo extends Component {
     this.setState(
       prevState => ({
         todoList: prevState.todoList.filter(eachTask => eachTask.id !== id),
+        tasksCount: prevState.tasksCount - 1,
       }),
       () => {
         this.onSaveTasksToLocalStorage()
