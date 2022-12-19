@@ -15,6 +15,7 @@ class Todo extends Component {
     todoList: localData,
     searchInput: '',
     showMarked: true,
+    tasksCount: 0,
   }
 
   onChangeTaskName = event => {
@@ -37,6 +38,7 @@ class Todo extends Component {
         {
           todoList: [...todoList, newTask],
           taskName: '',
+          tasksCount: todoList.length + 1,
         },
         () => {
           this.onSaveTasksToLocalStorage()
