@@ -74,7 +74,6 @@ class Todo extends Component {
         this.onSaveTasksToLocalStorage()
       },
     )
-    console.log(todoList.length)
     if (todoList.length === 1) {
       this.onClearAllTasks()
     }
@@ -91,7 +90,7 @@ class Todo extends Component {
 
   onClearAllTasks = () => {
     localStorage.removeItem('todoList')
-    this.setState({todoList: []})
+    this.setState({todoList: [], tasksCount: 0})
   }
 
   showCompletedTasks = () => {
