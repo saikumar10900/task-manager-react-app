@@ -6,8 +6,12 @@ import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 let localData = JSON.parse(localStorage.getItem('todoList'))
+let taskCount = JSON.parse(localStorage.getItem('tasksCount'))
 if (localData === null) {
   localData = []
+}
+if (taskCount === null) {
+  taskCount = 0
 }
 class Todo extends Component {
   state = {
@@ -15,7 +19,7 @@ class Todo extends Component {
     todoList: localData,
     searchInput: '',
     showMarked: true,
-    tasksCount: 0,
+    tasksCount: taskCount,
   }
 
   onChangeTaskName = event => {
