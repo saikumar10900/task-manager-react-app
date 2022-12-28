@@ -86,6 +86,7 @@ class Todo extends Component {
   onSaveTasksToLocalStorage = () => {
     const {todoList} = this.state
     localStorage.setItem('todoList', JSON.stringify(todoList))
+    localStorage.setItem('tasksCount', JSON.stringify(todoList.length))
   }
 
   onChangeSearchInput = event => {
